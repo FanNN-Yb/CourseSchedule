@@ -1,0 +1,27 @@
+<!-- SF Symbol "chevron.up.chevron.down" 的矢量近似（Pop-up Button 右侧那对上下细箭头）。
+     未加载 SF Symbols 字体时（GlasmioIconProvider 里 symbolTypeface 为空），
+     同名符号会落到 MaterialGlasmioIconResolver，被 "chevron.up" 前缀命中 →
+     渲染为 Icons.Default.KeyboardArrowUp（带杆的粗实心上箭头），与目标字形不符。
+     因此这里手绘：两枚浅角细箭头，圆头圆角，1.9dp 描边。
+
+     视口直接取 14×18（= 调用处的槽位尺寸，Image 的 Fit 缩放正好是 1:1），
+     墨迹 10.4×12.6dp 居中于 (7, 9)，两枚箭头之间留 2dp 空隙 ——
+     比例对齐 18pt 下的原字形。 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="14dp"
+    android:height="18dp"
+    android:viewportWidth="14"
+    android:viewportHeight="18">
+    <path
+        android:pathData="M2.75,7.05 L7,3.65 L11.25,7.05"
+        android:strokeColor="@android:color/white"
+        android:strokeWidth="1.9"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M2.75,10.95 L7,14.35 L11.25,10.95"
+        android:strokeColor="@android:color/white"
+        android:strokeWidth="1.9"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>
