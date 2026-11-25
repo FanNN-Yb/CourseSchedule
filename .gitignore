@@ -1,0 +1,28 @@
+# ── Gradle / 构建产物 ──────────────────────────────────
+.gradle/
+.kotlin/
+build/
+app/build/
+local.properties
+.cxx/
+.externalNativeBuild/
+captures/
+
+# ── 签名与密钥（绝不入库）────────────────────────────
+*.jks
+*.keystore
+*.p12
+mapping.txt
+
+# ── IDE ───────────────────────────────────────────────
+.idea/
+*.iml
+*.ipr
+*.iws
+.DS_Store
+
+# ── 本地工具与临时产物（不属于 App 源码）────────────────
+/_*
+.zcodeignore
+.workbuddy/
+.zcode/
